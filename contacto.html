@@ -118,8 +118,9 @@
            A trusted form service or secure backend would be required to process submissions safely. 
            For now, WhatsApp is the primary contact method.
         -->
-        <form class="formulario" style="max-width:640px; margin:0 auto;"
-              onsubmit="return false;" aria-describedby="aviso-formulario">
+        <form class="formulario" id="formulario-contacto"
+              style="max-width:640px; margin:0 auto;"
+              aria-describedby="aviso-formulario">
           <div>
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" autocomplete="name" />

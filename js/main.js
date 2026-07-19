@@ -40,4 +40,17 @@ document.addEventListener("DOMContentLoaded", function () {
   if (anio) {
     anio.textContent = new Date().getFullYear();
   }
+
+   /* ---------- 3. Contact form feedback ---------- */
+  var formularioContacto = document.querySelector("#formulario-contacto");
+
+  if (formularioContacto) {
+    formularioContacto.addEventListener("submit", function (evento) {
+      evento.preventDefault();
+
+      alert(
+        "Este formulario todavía no está conectado. Por favor, contáctanos por WhatsApp."
+      );
+    });
+  }
 });
