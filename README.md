@@ -1,91 +1,101 @@
-# Distribuidora Casa Vázquez — Guía rápida para el dueño
+# Distribuidora Casa Vázquez
 
-Este sitio web es **estático, simple y seguro**:
-sólo usa HTML, CSS y JavaScript puro. **No** tiene base de datos, **no** guarda
-datos de clientes, **no** cobra pagos, **no** tiene login y **no** usa rastreadores.
+Sitio web informativo para **Distribuidora Casa Vázquez**, una ferretería que ofrece productos de mayoreo y menudeo en Pachuca, Hidalgo, México.
 
----
+El sitio permite a los clientes conocer las principales categorías de productos, consultar información para compras al mayoreo y comunicarse directamente con el negocio mediante WhatsApp.
 
-## 1) Cómo reemplazar los datos (paso a paso)
+## English Summary
 
-Todo lo que debes cambiar aparece **resaltado en amarillo** en la página, con corchetes,
-por ejemplo: `[ESCRIBIR HORARIO AQUÍ]`. Sólo busca esos textos y escríbelos con tus datos reales.
+Informational website for **Distribuidora Casa Vázquez**, a hardware store serving retail and wholesale customers in Pachuca, Hidalgo, Mexico.
 
-### a) Número de WhatsApp
-- En todos los archivos el número de ejemplo es `5210000000000`.
-- Es tu número **con la clave de país 52** (México), sin espacios, sin signos y sin el "+".
-  Ejemplo: si tu número es 33 1234 5678, se escribe `523312345678`.
-- Cómo cambiarlo fácil: abre cada archivo `.html` con un editor de texto, usa
-  "Buscar y reemplazar", busca `5210000000000` y reemplázalo por tu número real. Repite en los 5 archivos HTML.
+The website helps customers explore product categories, review wholesale purchasing information, and contact the business directly through WhatsApp.
 
-### b) Dirección, teléfono, correo y horario
-- Abre `contacto.html` y reemplaza los textos entre corchetes:
-  `[ESCRIBIR DIRECCIÓN COMPLETA AQUÍ]`, `[ESCRIBIR NÚMERO DE WHATSAPP AQUÍ]`,
-  `[ESCRIBIR CORREO AQUÍ]`, `[ESCRIBIR HORARIO AQUÍ]`.
-- En el pie de página (footer) de todos los archivos también hay `[DIRECCIÓN]`, `[NÚMERO]`, `[CORREO]`.
-- En `index.html` hay `[HORARIO]` y la zona de servicio `[ESCRIBIR AQUÍ LA CIUDAD...]`.
+## Acerca del proyecto
 
-### c) Mapa de Google
-1. Entra a Google Maps y busca tu negocio.
-2. Botón **Compartir → Insertar un mapa**.
-3. Copia el código que empieza con `<iframe ...>`.
-4. En `contacto.html`, reemplaza `[PEGAR CÓDIGO DE GOOGLE MAPS AQUÍ]` por ese código.
+Desarrollé este proyecto para apoyar la presencia digital de un negocio real y aplicar mis conocimientos de desarrollo web en una situación práctica.
 
-### d) Catálogo Pulpos
-- En `catalogo.html`, el botón usa el enlace de ejemplo `https://example.com/catalogo-pulpos`.
-- Reemplázalo por el enlace real de tu catálogo Pulpos.
+Durante el desarrollo trabajé en la organización de contenido comercial, diseño adaptable, navegación entre varias páginas, integración de contacto mediante WhatsApp, administración de imágenes y publicación del sitio mediante un servicio de hosting.
 
-### e) Redes sociales
-- En `contacto.html`, los enlaces de Facebook, Instagram y TikTok tienen `href="#"`.
-- Reemplaza el `#` por la dirección real de cada red.
+También utilicé Git y GitHub para mantener un historial organizado de los cambios realizados durante el proyecto.
 
-### f) Imágenes (las cambias tú)
-Coloca tus propias fotos en la carpeta `images/` con **exactamente** estos nombres:
-- `logo-dcv.png` → tu logotipo
-- `fachada.jpg` → foto de la fachada / letrero de la tienda
-- `interior.jpg` → foto del interior de la tienda
-- `productos.jpg` → foto de productos surtidos
-- `herramientas.jpg` → foto de herramientas
+## Características principales
 
-Usa **sólo fotos propias**. No uses fotos de marcas ni del catálogo Pulpos.
+- Sitio web con varias páginas
+- Diseño adaptable para teléfonos, tabletas y computadoras
+- Página principal con información general del negocio
+- Sección de categorías de productos
+- Catálogo informativo
+- Información para clientes de mayoreo
+- Página de contacto
+- Botones de comunicación mediante WhatsApp
+- Navegación consistente entre las páginas
+- Formulario de contacto informativo
 
----
+## Tecnologías utilizadas
 
-## 2) Lista de revisión antes de publicar
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
+- Visual Studio Code
 
-- [ ] Cambié el número `5210000000000` por mi WhatsApp real en los 5 archivos HTML.
-- [ ] Llené dirección, teléfono, correo y horario en `contacto.html`.
-- [ ] Llené los datos del pie de página (footer) en todas las páginas.
-- [ ] Puse el enlace real del catálogo Pulpos en `catalogo.html`.
-- [ ] Pegué el mapa de Google en `contacto.html`.
-- [ ] Puse los enlaces reales de mis redes sociales.
-- [ ] Agregué mis 5 imágenes propias en la carpeta `images/` con los nombres correctos.
-- [ ] Revisé que no queden textos entre corchetes `[ ]` sin llenar.
-- [ ] Abrí el sitio en un celular para confirmar que se ve bien.
-- [ ] Probé todos los botones de WhatsApp (que abran el chat con mi número).
-- [ ] Confirmé que el formulario de contacto todavía **no** envía (avisa que se usa WhatsApp).
-- [ ] Revisé la ortografía y que los datos sean correctos.
+El sitio es estático y no requiere una base de datos, un servidor backend ni dependencias externas para funcionar.
 
----
+## Estructura del proyecto
 
-## 3) Información privada que NO debes dar a la IA (ni poner en el código)
+```text
+distribuidora-casa-vazquez/
+├── css/
+│   └── styles.css
+├── images/
+├── js/
+│   └── main.js
+├── catalogo.html
+├── categorias.html
+├── contacto.html
+├── index.html
+├── mayoreo.html
+├── .gitignore
+└── README.md
+```
 
-Nunca compartas ni pegues en el sitio:
-- Contraseñas de tu correo, redes sociales, hosting o dominio.
-- Datos de acceso (usuario/contraseña) de cualquier plataforma.
-- Números de tarjeta, cuentas bancarias o CLABE.
-- Llaves de API, tokens o claves secretas.
-- Datos personales de clientes (nombres, teléfonos, direcciones).
-- Documentos oficiales (INE, RFC con datos sensibles, etc.).
+## Páginas del sitio
 
-Tu número de WhatsApp y la dirección de la tienda **sí** son públicos (van en el sitio),
-pero contraseñas y llaves secretas **jamás**.
+- `index.html` — Página principal
+- `categorias.html` — Categorías de productos
+- `catalogo.html` — Información del catálogo
+- `mayoreo.html` — Información para compras al mayoreo
+- `contacto.html` — Información de contacto
 
----
+## Responsabilidades del proyecto
 
-## Nota sobre el formulario de contacto
+- Organización de la estructura del sitio
+- Desarrollo de las páginas con HTML
+- Diseño visual y adaptable con CSS
+- Implementación de interacciones con JavaScript
+- Integración de enlaces de contacto
+- Organización y optimización de imágenes
+- Pruebas de navegación y diseño adaptable
+- Control de versiones con Git y GitHub
+- Publicación y actualización del sitio en hosting
 
-El formulario en `contacto.html` es **sólo visual**: por ahora no envía mensajes.
-Para que funcione de forma segura, un desarrollador debe conectarlo a un
-servicio confiable de formularios (por ejemplo Formspree, Basin o Getform) o a un
-backend seguro. Mientras tanto, el contacto principal es por **WhatsApp**.
+## Autor
+
+Sitio web diseñado y desarrollado por **Fidel G. Vázquez**.
+
+## Estado del proyecto
+
+El sitio se encuentra funcional y publicado para el negocio.
+
+Puede continuar actualizándose cuando el propietario proporcione nuevos productos, fotografías, información comercial o cambios en los datos de contacto.
+
+## Ejecución local
+
+No se requiere instalar dependencias.
+
+1. Descarga o clona el repositorio.
+2. Abre la carpeta del proyecto en Visual Studio Code.
+3. Abre `index.html` directamente en un navegador.
+
+También puede ejecutarse mediante la extensión **Live Server** de Visual Studio Code.
